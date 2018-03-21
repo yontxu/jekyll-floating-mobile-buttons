@@ -1,0 +1,17 @@
+<header>
+  <div id="header-wrapper">
+    <div id="logo-link" class="unit whole">
+      <a href="/"><img src="HEADER_LOGO" alt=" Home" title=" Home"></a>
+    </div>
+    <div id="main-nav" class="hidden-sm">
+      <ul id="nav">
+        {% for item in site.data.menu %}
+        <li {% if page.url contains item.url %} class="current"{% endif %}><a href="{{item.url}}">{{item.desc}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div id="mobile-nav-link" class="visible-sm">
+      <a id="mobile-nav-open" href="#nav">Menu</a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="wrap">
+  <div id="holder">
+    {% include header.html %}
+    <div id="container">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </div>
+  <div id="back-to-top"><a href="#" onclick="return false;"><span class="icon bl-arrow-top"></span>Back to top</a></div>
+  {% javascript script %}
+  {% include analytics.html %}
+  </body>
+</html>

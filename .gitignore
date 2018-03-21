@@ -1,0 +1,7 @@
+*.iml
+.idea
+.DS_Store
+.sass-cache
+.asset-cache
+.jekyll-metadata
+_site
