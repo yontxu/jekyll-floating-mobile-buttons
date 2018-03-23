@@ -11,3 +11,5 @@ compress:
   css:  sass
   js:   uglifier
 url: SITE.URL
+
+theme: jekyll-theme-cayman
