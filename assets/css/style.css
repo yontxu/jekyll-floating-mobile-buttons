@@ -1,0 +1,48 @@
+/*
+Error: Invalid CSS after "...eakpoint: 64em ": expected "{", was "!default;"
+        on line 5 of style.scss
+
+1: ---
+2: ---
+3: 
+4: // Breakpoints
+5: $large-breakpoint: 64em !default;
+6: $medium-breakpoint: 42em !default;
+7: 
+8: // Headers
+9: $header-heading-color: #fff !default;
+10: $header-bg-color: #4a2d99 !default;
+
+Backtrace:
+style.scss:5
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.3.3/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.3/bin/scss:22:in `load'
+/usr/local/rvm/gems/ruby-2.3.3/bin/scss:22:in `<main>'
+/usr/local/rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:15:in `eval'
+/usr/local/rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...eakpoint: 64em \": expected \"{\", was \"!default;\"\A         on line 5 of style.scss\A \A 1: ---\A 2: ---\A 3: \A 4: // Breakpoints\A 5: $large-breakpoint: 64em !default;\A 6: $medium-breakpoint: 42em !default;\A 7: \A 8: // Headers\A 9: $header-heading-color: #fff !default;\A 10: $header-bg-color: #4a2d99 !default;"; }

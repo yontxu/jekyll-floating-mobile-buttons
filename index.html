@@ -9,30 +9,70 @@ og_image:
 <div id="container-header"></div>
 <div id="home-container" class="grid">
   <div class="unit whole">
-    <h2>Header</h2>
+    <h2>Installation</h2>
+    <pre><code class="bash">ember install ember-floating-mobile-buttons</code></pre>
+    <h2>Usage</h2>
+    <p>Define a simple floating button.</p>
+
+{% highlight handlebars %}
+{% raw %}{{#floating-mobile-buttons}}
+    <a href>{{fa-icon "pencil"}}</a>
+{{/floating-mobile-buttons}}{% endraw %}
+{% endhighlight %}
+
+    <p>You can additionally define child buttons which will be display grouped by the parent button.</p>
+
+{% highlight handlebars %}
+{% raw %}{{#floating-mobile-buttons position="bottom right"}}
+    {{#floating-mobile-child-buttons label="Add Item"}}
+        <a href>{{fa-icon "user"}}</a>
+    {{/floating-mobile-child-buttons}}
+    {{#floating-mobile-child-buttons label="Remove Item"}}
+        <a href>{{fa-icon "trash-o"}}</a>
+    {{/floating-mobile-child-buttons}}
+    {{#floating-mobile-child-buttons label="Edit Item"}}
+        <a href>{{fa-icon "pencil"}}</a>
+    {{/floating-mobile-child-buttons}}
+{{/floating-mobile-buttons}}{% endraw %}
+{% endhighlight %}
+
+    <p>As seen in the example above, you can combine it with you own icons.</p>
+
+      <h2>Properties</h2>
+      <h3>Position</h3>
+      <p>The fixed position of the floating button.</p>
+      <p>The available list por position:
+        <ul>
+            <li>bottom right (default)</li>
+            <li>bottom left</li>
+            <li>top right</li>
+            <li>top left</li>
+        </ul>
+      </p>
+
+      <h2>Running</h2>
+      <p>
+          <ul>
+      <li><code>ember serve</code></li>
+            <li>Visit your app at http://localhost:4200.</li>
+          </ul>
+      </p>
+
+      <h2>Running tests</h2>
+      <p>
+          <ul>
+              <li><code>npm test</code> (Runs <code>ember try:each</code> to test your addon against multiple Ember versions)</li>
+              <li><code>ember test</code></li>
+              <li><code>ember test --server</code></li>
+          </ul>
+      </p>
+
+      <h2>Building</h2>
+      <p>
+      <ul>
+          <li><code>ember build</code></li>
+      </ul>
+      </p>
+      <p>For more information on using ember-cli, visit <a href="https://ember-cli.com/">https://ember-cli.com/</a>.</p>
   </div>
-  <div class="unit half">
-    <h3>1st Half</h3>
-    <p>Half</p>
-  </div>
-  <div class="unit half">
-    <h3>2nd Half</h3>
-    <p>Half</p>
-  </div>
-</div>
-
-<div class="panel-pane pane-node hero">
-
-
-
-  <div class="pane-content">
-    <div about="/node/1" typeof="sioc:Item foaf:Document" class="ds-1col node node-quote node-promoted view-mode-full clearfix">
-
-
-      <blockquote><p>Helping you sell your business, make an acquisition or develop your company through further funding and support.</p>
-      </blockquote></div>
-
-  </div>
-
-
 </div>

@@ -1,15 +1,6 @@
-name: SITE.NAME
-icon_name: favicon.ico
-ga_profile_id: SITE.GA_PROFILE_ID
-markdown: redcarpet
-highlighter:
-exclude: [ doc, Gemfile, Gemfile.lock, upload.sh, README.md ]
-gems:
-- jekyll-assets
-- jekyll-sitemap
-compress:
-  css:  sass
-  js:   uglifier
-url: SITE.URL
-
+title: Ember Floating Mobile Buttons
 theme: jekyll-theme-cayman
+description: Stylish and easy to use Ember floating buttons
+show_downloads: false
+google_analytics: UA-116305706-1
+sass-variables: variables
