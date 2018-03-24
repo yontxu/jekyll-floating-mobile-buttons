@@ -46,6 +46,17 @@ og_image:
 {{/floating-mobile-buttons}}{% endraw %}
 {% endhighlight %}
 
+
+      <p>The <code>floating-mobile-buttons</code> component yields the clousure action <code>toggleChildren</code> so you are able to use it in your child components to toggle the child button group.</p>
+
+{% highlight handlebars %}
+{% raw %}{{#floating-mobile-buttons as |toggleChildren|}}
+  {{#floating-mobile-child-buttons label="Add Item"}}
+  <a href {{action toggleChildren}}>{{fa-icon "user"}}</a>
+  {{/floating-mobile-child-buttons}}
+  {{/floating-mobile-buttons}}{% endraw %}
+{% endhighlight %}
+
     <p>As seen in the example above, you can combine it with you own icons.</p>
 
       <h2>
