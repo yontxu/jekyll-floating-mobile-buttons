@@ -4,3 +4,6 @@ description: Stylish and easy to use Ember floating buttons
 show_downloads: false
 google_analytics: UA-116305706-1
 sass-variables: variables
+github:
+  repository_url: https://github.com/yontxu/ember-floating-mobile-buttons
+  repository_name: ember-floating-mobile-buttons

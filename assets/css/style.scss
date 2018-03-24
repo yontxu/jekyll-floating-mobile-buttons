@@ -43,3 +43,23 @@ body {
     width: 200px;
   }
 }
+.anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+  .octicon-link{
+    color: #1b1f23;
+    vertical-align: middle;
+    visibility: hidden;
+  }
+}
+h2:hover .anchor .octicon-link{
+  visibility: visible;
+}
+.floating-buttons .floating-button{
+  background-color: #2ab8e4;
+}
+.floating-buttons .floating-button .floating-button-icon-plus{
+  height: 14px;
+}
